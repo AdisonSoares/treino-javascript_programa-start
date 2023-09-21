@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Conteúdo Através de Classes</title>
+
+    <!-- JavaScript -->
+    <script>
+        function exibirTexto(){
+            //Variável
+            var campo = document.getElementsByClassName("texto")[0];
+
+            //Exibir o conteúdo 
+            alert(campo.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="exibirTexto()">Clique aqui</button>
+    <h1 class="texto">Proway</h1>
+    <h2 class="texto">Seletores JS</h2>
+    <p class="texto">Curso Proway</p>
+</body>
+</html>
